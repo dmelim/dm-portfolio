@@ -1,7 +1,13 @@
 import { NextPage } from "next";
+import { Fragment } from "react";
+import Navbar from "../components/Layout/Navbar";
 
 const About: NextPage = () => {
-  return <h1>The about page</h1>;
+  return (
+    <Fragment>
+      <Navbar />
+    </Fragment>
+  );
 };
 
 export default About;
