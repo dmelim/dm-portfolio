@@ -1,19 +1,23 @@
+import Link from "next/link";
+
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100">
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">Diogo Melim</a>
+        <Link href="/" className="btn btn-ghost normal-case text-xl">
+          Diogo Melim
+        </Link>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal p-0">
           <li>
-            <a>Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a>Projects</a>
+            <Link href="/projects">Projects</Link>
           </li>
           <li>
-            <a>About</a>
+            <Link href="/about">About</Link>
           </li>
         </ul>
       </div>
