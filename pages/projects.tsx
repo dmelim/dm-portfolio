@@ -7,9 +7,11 @@ const Projects: NextPage = () => {
   return (
     <Fragment>
       <Navbar />
-      <Project orientation={"normal"} />
-      <Project orientation={"reversed"} />
-      <Project orientation={"normal"} />
+      <div className="flex mb-4 place-content-center ">
+        <Project details="something" title="something" />
+        <Project details="something" title="something" />
+        <Project details="something" title="something" />
+      </div>
     </Fragment>
   );
 };
