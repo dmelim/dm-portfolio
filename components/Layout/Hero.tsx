@@ -1,23 +1,19 @@
-const Hero = () => {
+const HeroTest = () => {
   return (
-    <div className="hero min-h-screen bg-base-200">
-      <div className="hero-content text-center">
-        <div className="max-w-md">
-          <h1 className="text-5xl font-bold">Hello there</h1>
-          <img
-            src="https://us.v-cdn.net/6025736/uploads/editor/xv/3l870rblpzh7.jpg"
-            className=" m-5 "
-          />
-          <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
-          </p>
-          <button className="btn btn-info">Get Started</button>
+    <div className="container mx-auto mt-20">
+      <div className="grid gap-4 grid-rows-3 grid-cols-1 justify-items-center content-center items-center">
+        <div className="text-9xl uppercase tracking-widest underline animate-wiggleLeft animate-repeat-1 ">
+          Diogo
+        </div>
+        <div className="text-9xl uppercase text-primary tracking-widest underline animate-wiggleRight animate-repeat-1 ">
+          Melim
+        </div>
+        <div className="text-4xl uppercase text-secondary tracking-widest">
+          Web-Developer
         </div>
       </div>
     </div>
   );
 };
 
-export default Hero;
+export default HeroTest;
