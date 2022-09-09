@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base place-content-center">
+    <div className="navbar bg-base place-content-center mt-7">
       <div className="flex-none">
         <ul className="menu menu-horizontal p-0">
           <li>
