@@ -1,6 +1,6 @@
 const HeroTest = () => {
   return (
-    <div className="container mx-auto mt-20">
+    <div className="container mx-auto mt-10">
       <div className="grid gap-4 grid-rows-3 grid-cols-1 justify-items-center content-center items-center">
         <div className="text-9xl uppercase tracking-widest underline animate-wiggleLeft animate-repeat-1 ">
           Diogo

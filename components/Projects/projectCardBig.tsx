@@ -5,11 +5,11 @@ type Props = {
   projectLink: string;
 };
 
-const ProjectCard = ({ title, details, cName, projectLink }: Props) => {
+const ProjectCardBig = ({ title, details, cName, projectLink }: Props) => {
   return (
     <div
       className={
-        " bg-base-300 shadow-xl w-fit grid grid-cols-2 grid-rows-2 p-3 items-center my-9  mx-auto" +
+        " bg-base-300 bg-opacity-50 shadow-xl w-fit grid grid-cols-2 grid-rows-2 p-3 items-center my-9  mx-auto" +
         cName
       }
     >
@@ -17,17 +17,19 @@ const ProjectCard = ({ title, details, cName, projectLink }: Props) => {
         <img src="https://placeimg.com/400/400/arch" alt="Album" />
       </figure>
       <div className=" col-span-2 row-span-2 grid grid-cols-2 justify-items-center my-9 translate-x-20 -translate-y-10">
-        <div className="col-span-1">
+        <div className="col-span-1 w-40">
           <h2 className="card-title">{title}</h2>
           <p>{details}</p>
         </div>
         <div className="col-span-1">
           <button className="btn btn-primary">
-            <a href={projectLink}>Visit the project</a>
+            <a href={projectLink} target="_blank" rel="noopener noreferrer">
+              Visit the project
+            </a>
           </button>
         </div>
       </div>
     </div>
   );
 };
-export default ProjectCard;
+export default ProjectCardBig;
