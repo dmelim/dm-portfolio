@@ -7,7 +7,7 @@ const Code = () => {
       <div className="indicator">
         <div className="indicator-item indicator-bottom">
           <button
-            className="btn btn-primary"
+            className="btn btn-primary text-white"
             onClick={() => {
               router.push("/projects");
             }}

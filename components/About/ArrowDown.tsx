@@ -5,13 +5,13 @@ const ArrowDown = () => {
       viewBox="0 0 800 800"
       height="100"
       width="200"
-      className=" animate-bounce"
+      className="animate-bounce"
     >
       <path
         fill="none"
         stroke="hsl(0, 0%, 100%)"
         strokeLinecap="square"
-        strokeWidth="11"
+        strokeWidth="20"
         markerEnd="url(#SvgjsMarker1354)"
         d="M283 283L517 517"
         transform="rotate(45 385 363.787)"
