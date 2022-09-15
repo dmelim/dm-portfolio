@@ -1,10 +1,12 @@
+import Image, { StaticImageData } from "next/image";
+
 type Props = {
   title: string;
   alt: string;
   details: string;
   cName: string;
   projectLink: string;
-  image: string;
+  image: string | StaticImageData;
 };
 const ProjectCardAlt = ({
   image,
@@ -19,7 +21,7 @@ const ProjectCardAlt = ({
       className={"card w-96 bg-base-100 shadow-xl image-full mx-auto " + cName}
     >
       <figure>
-        <img src={image} alt={alt} />
+        <Image src={image} alt={alt} layout="fill" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
