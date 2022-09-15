@@ -1,16 +1,25 @@
 type Props = {
   title: string;
+  alt: string;
   details: string;
   cName: string;
   projectLink: string;
+  image: string;
 };
-const ProjectCardAlt = ({ title, details, cName, projectLink }: Props) => {
+const ProjectCardAlt = ({
+  image,
+  alt,
+  title,
+  details,
+  cName,
+  projectLink,
+}: Props) => {
   return (
     <div
       className={"card w-96 bg-base-100 shadow-xl image-full mx-auto " + cName}
     >
       <figure>
-        <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
+        <img src={image} alt={alt} />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>

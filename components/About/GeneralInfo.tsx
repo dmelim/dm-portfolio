@@ -64,7 +64,9 @@ const GeneralInfo = () => {
               Maximilian Schwarzmüller, on Udemy.
             </p>
             <button className="btn btn-outline btn-accent my-6">
-              <a href="">Check the certificate</a>
+              <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-9c0a8662-e04a-4efe-9f97-d1e495235441.pdf">
+                Check the certificate
+              </a>
             </button>
           </li>
           <li className="mb-20">
