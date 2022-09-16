@@ -1,13 +1,12 @@
 import { useRouter } from "next/router";
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
 import Navbar from "../../components/Layout/Navbar";
-import ProjectInfo from "../../components/Projects/projectInfo";
+import ProjectInfo from "../../components/Projects/ProjectInfo";
 import { ProjectList } from "../../components/Projects/ProjectsList";
 
 const Project = () => {
   const router = useRouter();
   const { id } = router.query;
-
   return (
     <Fragment>
       <Navbar />
