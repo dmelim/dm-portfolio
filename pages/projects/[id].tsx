@@ -10,7 +10,6 @@ const Project = () => {
   return (
     <Fragment>
       <Navbar />
-      <h1 className=" text-center"> HELLO</h1>
       {ProjectList.filter((project) => project.id === id).map((project) => (
         <ProjectInfo
           key={project.id}

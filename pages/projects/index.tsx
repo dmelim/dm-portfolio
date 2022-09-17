@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import { Fragment } from "react";
 import Footer from "../../components/Layout/Footer";
 import Navbar from "../../components/Layout/Navbar";
-import ProjectCardAlt from "../../components/Projects/projectCardAlt";
+import ProjectCardAlt from "../../components/Projects/ProjectCardAlt";
 import { ProjectList } from "../../components/Projects/ProjectsList";
 
 const Projects: NextPage = () => {
@@ -17,11 +17,12 @@ const Projects: NextPage = () => {
         {ProjectList.filter((project) => project.finished === "Finished").map(
           (project) => (
             <ProjectCardAlt
+              id={project.id}
               cName=""
               key={project.id}
               image={project.image.src}
               alt={project.image.alt}
-              details={project.details}
+              details={project.detailsShort}
               title={project.title}
               projectLink={project.link}
             />
@@ -35,11 +36,12 @@ const Projects: NextPage = () => {
         {ProjectList.filter((project) => project.finished === "Working on").map(
           (project) => (
             <ProjectCardAlt
+              id={project.id}
               cName=""
               key={project.id}
               image={project.image.src}
               alt={project.image.alt}
-              details={project.details}
+              details={project.detailsShort}
               title={project.title}
               projectLink={project.link}
             />

@@ -8,7 +8,7 @@ export type Project = {
   detailsShort: string;
   details: string;
   link: string;
-  image: { src: string | StaticImageData; alt: string };
+  image: { src: string; alt: string };
   finished: "Finished" | "Working on";
 };
 
@@ -19,7 +19,7 @@ export const ProjectList: Project[] = [
     detailsShort: "My personal portfolio project.",
     details: "",
     image: {
-      src: portfolioPic,
+      src: "../../images/personalPorfolio.png",
       alt: "Portfolio Website",
     },
     link: "https://github.com/dmelim/dm-portfolio",
@@ -30,8 +30,9 @@ export const ProjectList: Project[] = [
     title: "Educert",
     detailsShort:
       "EduCert is a decentralized, blockchain-based degree and diploma certification system.",
-    details: "",
-    image: { src: educertPic, alt: "Educert" },
+    details:
+      "EduCert is a decentralized, blockchain-based degree and diploma certification system . Which will allow any user anywhere in the world to validate whether the pdf document he or she holds, relating to a degree certificate or diploma issued by a HEI, is valid.",
+    image: { src: "../../images/educert.png", alt: "Educert" },
     link: "https://github.com/dmelim/EduCert",
     finished: "Finished",
   },
@@ -39,7 +40,8 @@ export const ProjectList: Project[] = [
     id: "p3",
     title: "Random Spewer Bot",
     detailsShort: "A simple discord bot that spews random quotes.",
-    details: "",
+    details:
+      "This is a discord bot built in JavaScript with the discord.js library. The purpose of it is to spews random quotes. This was build as a test using discord.js.",
     image: {
       src: "https://static1.dualshockersimages.com/wordpress/wp-content/uploads/2021/04/discord-april-fools.jpg",
       alt: "Random Spewer Bot",
@@ -51,7 +53,8 @@ export const ProjectList: Project[] = [
     id: "p4",
     title: "Pokerole bot",
     detailsShort: "A discord bot helper for Pokerole RP",
-    details: "",
+    details:
+      "A discord bot helper for Pokerole RP.This is a discord bot built in JavaScript with the discord.js library. The purpose of it is to help in a Pokérole Project campaign.To run the JS files use NodeJS. You need to create a dotenv file (.env) and store some private information. To understand it better I suggest this tutorial. For a more up-to-date tutorial, it's the official guide for discord.js.Run the deploy commands file once, and the main.js every time you want to run the bot on your nodeJS server, it will keep on running, till you close it.",
     image: {
       src: "https://static1.dualshockersimages.com/wordpress/wp-content/uploads/2021/04/discord-april-fools.jpg",
       alt: "Pokerole bot",

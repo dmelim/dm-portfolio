@@ -1,14 +1,16 @@
-import Image, { StaticImageData } from "next/image";
+import { useRouter } from "next/router";
 
 type Props = {
+  id: string;
   title: string;
   alt: string;
   details: string;
   cName: string;
   projectLink: string;
-  image: string | StaticImageData;
+  image: string;
 };
 const ProjectCardAlt = ({
+  id,
   image,
   alt,
   title,
@@ -16,21 +18,25 @@ const ProjectCardAlt = ({
   cName,
   projectLink,
 }: Props) => {
+  const router = useRouter();
   return (
     <div
       className={"card w-96 bg-base-100 shadow-xl image-full mx-auto " + cName}
     >
       <figure>
-        <Image src={image} alt={alt} layout="fill" />
+        <img src={image} alt={alt} />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
         <p> {details} </p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">
-            <a href={projectLink} target="_blank" rel="noopener noreferrer">
-              Visit the project
-            </a>
+          <button
+            className="btn btn-primary"
+            onClick={() => {
+              router.push("/projects/" + id);
+            }}
+          >
+            Visit the project
           </button>
         </div>
       </div>

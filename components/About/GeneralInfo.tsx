@@ -2,11 +2,9 @@ import { Fragment } from "react";
 
 const GeneralInfo = () => {
   return (
-    <Fragment>
-      <section className="grid grid-cols-2 mx-40">
-        <h1 className="col-span-2 text-6xl my-10 font-extrabold text-accent">
-          Education
-        </h1>
+    <div>
+      <section className="mx-10 lg:mx-40">
+        <h1 className="text-6xl my-10 font-extrabold text-accent">Education</h1>
         <div>
           <div className="mb-20">
             <h2 className="text-3xl font-bold">
@@ -28,10 +26,8 @@ const GeneralInfo = () => {
           </div>
         </div>
       </section>
-      <section className="grid grid-cols-2 mx-40">
-        <h1 className="col-span-2 text-6xl my-10 font-extrabold text-accent">
-          Courses
-        </h1>
+      <section className="mx-10 lg:mx-40">
+        <h1 className=" text-6xl my-10 font-extrabold text-accent">Courses</h1>
         <ul>
           <li className="mb-20">
             <h1 className="text-3xl font-bold">
@@ -64,7 +60,11 @@ const GeneralInfo = () => {
               Maximilian Schwarzmüller, on Udemy.
             </p>
             <button className="btn btn-outline btn-accent my-6">
-              <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-9c0a8662-e04a-4efe-9f97-d1e495235441.pdf">
+              <a
+                href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-9c0a8662-e04a-4efe-9f97-d1e495235441.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Check the certificate
               </a>
             </button>
@@ -82,7 +82,7 @@ const GeneralInfo = () => {
           </li>
         </ul>
       </section>
-    </Fragment>
+    </div>
   );
 };
 

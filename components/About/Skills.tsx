@@ -5,7 +5,7 @@ const Skills = () => {
     <section className="my-10">
       <div>
         <h1 className="font-bold text-xl ">My Technologies</h1>
-        <p className="grid grid-cols-6 items-center justify-items-center my-10">
+        <div className="grid grid-cols-3 lg:grid-cols-6 items-center justify-items-center my-10">
           <Badge details="JavaScript" />
           <Badge details="HTML" />
           <Badge details="CSS" />
@@ -24,7 +24,7 @@ const Skills = () => {
           <Badge details="Git" />
           <Badge details="Bash" />
           <Badge details="VSCode" />
-        </p>
+        </div>
       </div>
     </section>
   );

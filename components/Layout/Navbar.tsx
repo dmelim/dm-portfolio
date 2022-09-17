@@ -12,7 +12,15 @@ const Navbar = () => {
               <a className="upper-case text-2xl">Home</a>
             </Link>
           </li>
-          <li className={router.pathname == "/projects" ? " text-accent " : ""}>
+          <li
+            className={
+              router.pathname == "/projects"
+                ? " text-accent "
+                : "" || router.pathname == "/projects/[id]"
+                ? " text-accent "
+                : ""
+            }
+          >
             <Link href="/projects">
               <a className="upper-case text-2xl">Projects</a>
             </Link>
