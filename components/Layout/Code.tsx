@@ -5,7 +5,7 @@ const Code = () => {
   return (
     <div className=" grid place-items-center">
       <div className="indicator">
-        <div className="indicator-item indicator-bottom">
+        <div className="indicator-item indicator-bottom ">
           <button
             className="btn btn-primary text-white"
             onClick={() => {

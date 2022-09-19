@@ -1,6 +1,6 @@
 const HeroTest = () => {
   const classTitle =
-    "text-9xl font-medium uppercase tracking-widest underline ";
+    "text-8xl md:text-9xl font-medium uppercase tracking-widest ";
   return (
     <div className="container mx-auto mt-10">
       <div className="grid gap-4 grid-rows-3 grid-cols-1 justify-items-center content-center items-center">
@@ -14,7 +14,7 @@ const HeroTest = () => {
         >
           Melim
         </div>
-        <div className="text-4xl uppercase text-white tracking-widest">
+        <div className="text-3xl md:text-4xl uppercase text-white tracking-widest">
           Web-Developer
         </div>
       </div>

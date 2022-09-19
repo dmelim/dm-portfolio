@@ -2,15 +2,15 @@ import { useRouter } from "next/router";
 import { Fragment, useEffect, useState } from "react";
 import Navbar from "../../components/Layout/Navbar";
 import ProjectInfo from "../../components/Projects/ProjectInfo";
-import { ProjectList } from "../../components/Projects/ProjectsList";
+import { filterID } from "../../components/Projects/ProjectsList";
 
 const Project = () => {
   const router = useRouter();
   const { id } = router.query;
+
   return (
     <Fragment>
-      <Navbar />
-      {ProjectList.filter((project) => project.id === id).map((project) => (
+      {filterID(id as string).map((project) => (
         <ProjectInfo
           key={project.id}
           title={project.title}
@@ -19,6 +19,7 @@ const Project = () => {
           projectLink={project.link}
           details={project.details}
           detailsShort={project.detailsShort}
+          techUsed={project.techUsed}
         />
       ))}
     </Fragment>

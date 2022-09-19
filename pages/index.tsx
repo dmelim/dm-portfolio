@@ -9,7 +9,6 @@ import Navbar from "../components/Layout/Navbar";
 const Home: NextPage = () => {
   return (
     <Fragment>
-      <Navbar />
       <Hero />
       <Code />
       <Footer />

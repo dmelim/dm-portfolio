@@ -6,7 +6,6 @@ import PersonalInfo from "../components/About/PersonalInfo";
 const About: NextPage = () => {
   return (
     <div>
-      <Navbar />
       <PersonalInfo />
       <Footer />
     </div>

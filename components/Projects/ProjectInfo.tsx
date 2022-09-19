@@ -1,4 +1,6 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
+import Badge from "../Layout/Badge";
 type Props = {
   title: string;
   details: string;
@@ -7,6 +9,7 @@ type Props = {
   cName?: string;
   projectLink: string;
   image: string;
+  techUsed: string[];
 };
 const ProjectInfo = ({
   image,
@@ -16,16 +19,36 @@ const ProjectInfo = ({
   detailsShort,
   cName,
   projectLink,
+  techUsed,
 }: Props) => {
   return (
     <div>
       <div className="grid grid-cols-1 lg:grid-cols-2 bg-base-100 shadow-xl m-20">
-        <img src={image} alt={alt} className="" />
+        <img src={image} alt={alt} className="self-center" />
         <div className="card-body">
-          <h2 className="card-title text-accent">{title}</h2>
-          <p>{detailsShort}</p>
+          <div className=" mb-48 ">
+            <div className="mb-10">
+              <h2 className="card-title text-accent">{title}</h2>
+              <p>{detailsShort}</p>
+            </div>
+            <h2 className="card-title text-accent">Skills</h2>
+            <div>
+              {techUsed.map((tech) => (
+                <Badge details={tech} />
+              ))}
+            </div>
+          </div>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary text-white">
+            <button className="btn btn-primary">
+              <Link href="/projects">Return to projects</Link>
+            </button>
+            <button
+              className={
+                projectLink.length !== 0
+                  ? "btn btn-primary text-white"
+                  : "btn btn-disabled"
+              }
+            >
               <a href={projectLink} target="_blank" rel="noopener noreferrer">
                 Check GitHub
               </a>
