@@ -11,7 +11,7 @@ const Projects: NextPage = () => {
   return (
     <Fragment>
       <h1 className="my-20 text-6xl items-center text-center">
-        <span className=" text-accent ">Welcome,</span> check my projects!
+        <span className=" text-accent ">Welcome!</span> Check out my projects:
       </h1>
       <h1 className={cardGroupTitle}>Finished Projects:</h1>
       <div className={cardGroup}>

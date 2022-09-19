@@ -12,7 +12,7 @@ const PersonalInfo = () => {
               Hey!
             </h1>
             <p className="text-center my-3">
-              I'm a Web Developer based in Madeira Island!
+              I'm a Web Developer based on Madeira Island!
             </p>
             <p>See more about me and my career.</p>
             <Skills />
