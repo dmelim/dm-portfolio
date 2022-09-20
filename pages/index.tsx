@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Head from "next/head";
 
 import { Fragment } from "react";
 import Code from "../components/Layout/Code";
@@ -9,6 +10,10 @@ import Navbar from "../components/Layout/Navbar";
 const Home: NextPage = () => {
   return (
     <Fragment>
+      <Head>
+        <title>Diogo Melim Portfolio</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Hero />
       <Code />
       <Footer />
