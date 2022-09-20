@@ -24,7 +24,7 @@ const ProjectInfo = ({
   return (
     <div>
       <div className="grid grid-cols-1 lg:grid-cols-2 bg-base-100 shadow-xl m-20">
-        <img src={image} alt={alt} className="self-center" />
+        <img src={"." + image} alt={alt} className="self-center" />
         <div className="card-body">
           <div className=" mb-48 ">
             <div className="mb-10">
