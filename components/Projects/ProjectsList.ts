@@ -17,7 +17,7 @@ const ProjectList: Project[] = [
     details:
       "This is my portfolio which I developed to showcase my capabilities with TypeScript and NextJS.",
     image: {
-      src: "/images/personalPorfolio.png",
+      src: "./images/personalPorfolio.png",
       alt: "Portfolio Website",
     },
     link: "https://github.com/dmelim/dm-portfolio",
@@ -31,7 +31,7 @@ const ProjectList: Project[] = [
       "EduCert is a decentralized, blockchain-based degree and diploma certification system.",
     details:
       "EduCert is a decentralized, blockchain-based degree and diploma certification system . Which will allow any user anywhere in the world to validate whether the pdf document he or she holds, relating to a degree certificate or diploma issued by a HEI, is valid.",
-    image: { src: "/images/educert.png", alt: "Educert" },
+    image: { src: "./images/educert.png", alt: "Educert" },
     link: "https://github.com/dmelim/EduCert",
     finished: "Finished",
     techUsed: [
