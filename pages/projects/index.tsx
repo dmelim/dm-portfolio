@@ -2,7 +2,6 @@ import { NextPage } from "next";
 import Head from "next/head";
 import { Fragment } from "react";
 import Footer from "../../components/Layout/Footer";
-import Navbar from "../../components/Layout/Navbar";
 import ProjectCardAlt from "../../components/Projects/ProjectCardAlt";
 import { finishedPrj } from "../../components/Projects/ProjectsList";
 
