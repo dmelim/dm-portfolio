@@ -1,6 +1,5 @@
 import { NextPage } from "next";
 import Footer from "../components/Layout/Footer";
-import Navbar from "../components/Layout/Navbar";
 import PersonalInfo from "../components/About/PersonalInfo";
 import Head from "next/head";
 
